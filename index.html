@@ -3,51 +3,97 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>JQuery Practice</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IINF 362</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
 </head>
 
 <body>
-    <div class="main">
-        <h2>JQuery Toggle Class Form</h2>
-        <form>
-            <div class="container">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <h2><a class="title" href="/index.html">IINF 362</a></h2>
+            <nav>
                 <ul>
-                    <li>
-                        <input type="checkbox" name="bankLoc" id="bankLoc" value="Bank Location" /><span class="label">Bank Location</span><span class="weight"><input type="text" name="weight" id="bankWeight"></span><span class="explanation">Distance of banks to your location</span>
+                    <li><a href="/notes/">Class Notes</a>
                     </li>
-                    <li>
-                        <input type="checkbox" name="numAtm" id="numAtm" value="Number of ATMs" /><span class="label">Number of ATMs</span><span class="weight"><input type="text" name="weight" id="atmWeight"></span><span class="explanation">Total number of ATM locations</span>
+                    <li><a href="/project/">Term Project</a>
                     </li>
-                    <li>
-                        <input type="checkbox" name="checkingFee" id="checkingFee" value="Checking Fee" /><span class="label">Chcking Fee</span><span class="weight"><input type="text" name="weight" id="checkingkWeight"></span><span class="explanation">Price of any checking fees</span> </li>
-                    <li>
-                        <input type="checkbox" name="custServiceRating" id="custServiceRating" value="Customer Service Rating" /><span class="label">Customer Service Rating</span><span class="weight"><input type="text" name="weight" id="customerWeight"></span><span class="explanation">Average customer service rating</span>
+                    <li><a href="/resources/">Resources</a>
                     </li>
-                    <li>
-                        <input type="checkbox" name="onlineOnly" id="onlineOnly" value="Online Only" /><span class="label">Online Only</span><span class="weight"><input type="text" name="weight" id="bankWeight"></span><span class="explanation">Is this an online only bank?</span>
-                    </li>
-                    <li><button type="button" id="btn">Submit</button></li>
                 </ul>
-            </div>
-            
-        </form>
-        
-        <div class="bestBank" id="bestBank">
-            
-        </div>
+            </nav>
+        </header>
     </div>
 
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <h1>IINF 362 - Intermediate Interactive Design</h1>
+            
+            <p><strong>Course Information</strong></p>
+            <p>A technique-oriented intermediate exploration of client-based and server-based Web design and development technologies, using current and emerging technologies. Design, planning, security and management of websites will also be examined.</p>
+
+<p>Working in teams students will collaborate to design and develop an accessible, responsive website/app for a client. Teams will be working with students from Albany Law School to build a website for an agency.</p>
+
+<p>Due to the nature of the course, the schedule will constantly be adjusting to coordinate with the Albany Law students. The course will add and remove topics based on the interest and level of the students in the course.</p>
+            
+            <p><strong>Prerequisite</strong></p>
+            <p>The prerequisite course for IINF 362 is ICSI 101, 105, 110, or 201, IINF 201.</p>
+            <p>The primary concepts from the prerequisite course that are relevant in this course are HTML and CSS. This course will build on these concepts and add several more.</p>
+
+            <p><strong>Course Schedule</strong>
+            </p>
+            <p><a href="https://docs.google.com/spreadsheets/d/1mY02zjVoK-EkLeAvRwDPTAxMJlwLseNOuBK5ooeB_tI/edit?usp=sharing" target="_blank">Tentative Course Schedule</a></p>
+            <p>Please note that this schedule is tentative and subject to change at any time based on student skills and levels of interest. </p>
+
+            <p><strong>Topics Explored:</strong></p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Angular.js</li>
+                <li>Responsive Design</li>
+                <li>Search Engine Optimization</li>
+                <li>Usability/Accessibility</li>
+            </ul>
+        </div>
+        <!-- #main -->
+    </div>
+    <!-- #main-container -->
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="foot-col">
+                <h3>Department</h3>
+                <p>Intermediate Interactive Design
+                    <br> Informatics Department
+                    <br> University at Albany
+                    <br> Fall 2015</p>
+            </div>
+            <div class="foot-col">
+                <h3>Meeting</h3>
+                <p>T/TH 5:45 - 7:05
+                    <br> BB0119
+                </p>
+            </div>
+            <div class="foot-col">
+                <h3>Instructor</h3>
+                <p>Christopher Velez
+                    <br> cvelez@albany.edu
+                    <br> T/TH 7:05 - 8:05 and by appointment
+                    <br> in LI-85</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
@@ -55,6 +101,24 @@
     </script>
 
     <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
